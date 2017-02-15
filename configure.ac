@@ -55,10 +55,10 @@ AC_PROG_CC
 # Since we use gnulib: gl_EARLY must be called as soon as possible after
 # the C compiler is checked.  The others could be later, but we just
 # keep everything together.
-# gl_EARLY
+gl_EARLY
 
 # For gnulib.
-# gl_INIT
+gl_INIT
 
 # Check for libbzenc API header file directory
 AC_MSG_CHECKING([for API header file directory])
@@ -109,6 +109,7 @@ AM_GNU_GETTEXT_VERSION([0.19.8])
 AM_GNU_GETTEXT([external])
 
 AC_CONFIG_FILES([
+ glib/Makefile
  po/Makefile.in
  Makefile
  src/Makefile
