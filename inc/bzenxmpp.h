@@ -25,4 +25,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/* Internationalization.  */
+# include "gettext.h"
+# define _(str) gettext (str)
+# define N_(str) gettext_noop (str)
+
 #endif /* _BZENXMPP_H_ */

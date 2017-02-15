@@ -1,9 +1,0 @@
-2017-02-13  Karl Kuhrman  <kkuhrman@barzensuit.org>
-
-	* configure.ac: V. 0.1.0 initial check in
-	* Makefile.am:  V. 0.1.0 initial check in
-	* src/Makefile.am:  V. 0.1.0 initial check in
-	* src/bzenxmpp.c:  V. 0.1.0 initial check in
-	* inc/bzenxmpp.h:  V. 0.1.0 initial check in
-	* tests/Makefile.am: V. 0.1.0 initial check in
-

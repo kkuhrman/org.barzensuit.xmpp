@@ -32,7 +32,8 @@ AC_CONFIG_AUX_DIR([build-aux])
 # @see: https://www.gnu.org/software/automake/manual/automake.html#Hello-World
 AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 
-# @todo: Specify location of local autoconf macros
+# Specify location of local autoconf macros
+AC_CONFIG_MACRO_DIR([m4])
 
 # Minimum Autoconf version required.
 AC_PREREQ([2.69])
@@ -103,7 +104,12 @@ fi
 AC_DEFINE_UNQUOTED([BZENC_LIB], ["$ac_bzenc_lib"], [location of libbzenc])
 AC_SUBST([BZENC_LIB], [$ac_bzenc_lib])
 
-AC_CONFIG_FILES([ 
+# i18n support from GNU gettext.
+AM_GNU_GETTEXT_VERSION([0.19.8])
+AM_GNU_GETTEXT([external])
+
+AC_CONFIG_FILES([
+ po/Makefile.in
  Makefile
  src/Makefile
  src/bzenxmpp.pc

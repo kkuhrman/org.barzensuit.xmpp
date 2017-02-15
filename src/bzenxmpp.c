@@ -27,5 +27,14 @@
 int
 main (int argc, char *argv[])
 {
+    /* Set locale via LC_ALL.  */
+  setlocale (LC_ALL, "");
+
+#if ENABLE_NLS
+  /* Set the text message domain.  */
+  bindtextdomain (PACKAGE, LOCALEDIR);
+  textdomain (PACKAGE);
+#endif
+
   return 0;
 }
