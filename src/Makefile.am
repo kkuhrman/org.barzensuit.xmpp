@@ -26,6 +26,7 @@ AM_CFLAGS = $(WARN_CFLAGS) $(WERROR_CFLAGS) $(CFLAG_VISIBILITY)
 # Add source file sub-directories to compiler search path
 AM_CPPFLAGS = \
 	-Iinc -I$(top_srcdir)/inc \
+	-Iglib -I$(top_srcdir)/glib \
 	-Ilib -I$(top_srcdir)/lib \
 	-Isrc -I$(top_srcdir)/src \
 	-I@BZENC_INC@
@@ -35,7 +36,7 @@ bin_PROGRAMS = bzenxmpp
 bzenxmpp_SOURCES = bzenxmpp.c bzenxmpp.h
 
 # Link to gnulib & libbzenc
-bzenxmpp_LDADD = @BZENC_LIB@ @LTLIBINTL@
+bzenxmpp_LDADD = @BZENC_LIB@ @LTLIBINTL@ $(top_builddir)/glib/libgnu.a
 
 localedir = $(datadir)/locale
 DEFS = -DLOCALEDIR=\"$(localedir)\" @DEFS@

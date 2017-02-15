@@ -22,7 +22,7 @@
 #
 
 # Find libtool macros.
-ACLOCAL_AMFLAGS = -I m4 -I glib/m4
+ACLOCAL_AMFLAGS = -I glib/m4 -I m4
 
 # @todo: DISTCHECK_CONFIGURE_FLAGS
 

@@ -22,12 +22,29 @@
 #ifndef _BZENXMPP_H_
 #define _BZENXMPP_H_
 
-#include <stdlib.h>
-#include <stdio.h>
+/* Assume ANSI C89 headers are available.  */
+# include <locale.h>
+# include <stdio.h>
+# include <stdlib.h>
+# include <string.h>
+
+/* Use POSIX headers.  If they are not available, we use the substitute
+   provided by gnulib.  */
+# include <getopt.h>
+# include <unistd.h>
+
+/* Unicode. */
+#include <wchar.h>
+#include <wctype.h>
 
 /* Internationalization.  */
 # include "gettext.h"
 # define _(str) gettext (str)
 # define N_(str) gettext_noop (str)
+
+/* gnulib */
+#include "closeout.h"
+#include "long-options.h"
+#include "progname.h"
 
 #endif /* _BZENXMPP_H_ */

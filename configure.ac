@@ -33,7 +33,7 @@ AC_CONFIG_AUX_DIR([build-aux])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 
 # Specify location of local autoconf macros
-AC_CONFIG_MACRO_DIR([m4])
+AC_CONFIG_MACRO_DIR([glib/m4])
 
 # Minimum Autoconf version required.
 AC_PREREQ([2.69])
@@ -46,8 +46,8 @@ AC_CONFIG_SRCDIR([src/bzenxmpp.c])
 
 # Copyright will apply as long as these sources are in use, e.g., are
 # being compiled, which is reasonable year to claim the copyright.
-# AC_DEFINE([COPYRIGHT_YEAR], [m4_esyscmd([date +%Y])], [year in copyright message])
-# AC_DEFINE([COPYRIGHT_HOLDER], ["Kuhrman Technology Solutions LLC"], [copyright holder])
+AC_DEFINE([BZENXMPP_COPYRIGHT_YEAR], [m4_esyscmd([date +%Y])], [year in copyright message])
+AC_DEFINE([BZENXMPP_COPYRIGHT_HOLDER], ["Kuhrman Technology Solutions LLC"], [copyright holder])
 
 # Checks for programs.
 AC_PROG_CC
