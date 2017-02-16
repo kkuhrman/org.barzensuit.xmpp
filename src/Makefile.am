@@ -33,7 +33,11 @@ AM_CPPFLAGS = \
 
 # make CLI utility
 bin_PROGRAMS = bzenxmpp
-bzenxmpp_SOURCES = bzenxmpp.c bzenxmpp.h
+bzenxmpp_SOURCES = \
+	bzenxmpp.c \
+	bzenxmpp.h \
+	bzenxmpp_help.c \
+	bzenxmpp_help.h
 
 # Link to gnulib & libbzenc
 bzenxmpp_LDADD = @BZENC_LIB@ @LTLIBINTL@ $(top_builddir)/glib/libgnu.a
