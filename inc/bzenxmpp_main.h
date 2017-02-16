@@ -1,6 +1,6 @@
 /**
- * @file:	bzenxmpp.h
- * @brief:	CLI
+ * @file:	bzenxmpp_main.h
+ * @brief:	bzenxmpp program global settings.
  * 
  * @copyright:	Copyright (C) 2017 Kuhrman Technology Solutions LLC
  * @license:	GPLv3+: GNU GPL version 3

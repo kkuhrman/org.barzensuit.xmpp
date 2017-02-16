@@ -1,6 +1,6 @@
 /**
  * @file:	bzenxmpp.c
- * @brief:	CLI
+ * @brief:	bzenxmpp program main().
  * 
  * @copyright:	Copyright (C) 2017 Kuhrman Technology Solutions LLC
  * @license:	GPLv3+: GNU GPL version 3
@@ -20,7 +20,7 @@
  */
 
 #include <config.h>
-#include "bzenxmpp.h"
+#include "bzenxmpp_main.h"
 #include "errno.h"
 #include "error.h"
 #include "bzenxmpp_help.h"
@@ -48,11 +48,11 @@ int main (int argc, char *argv[])
       {
 	/* --help and --version exit immediately, per GNU coding standards.  */
       case 'v':
-	bzen_print_version();
+	bzenxmpp_print_version();
 	exit(EXIT_SUCCESS);
 	break;
       case 'h':
-	bzen_print_help();
+	bzenxmpp_print_help();
 	exit(EXIT_SUCCESS);
 	break;
       default:
@@ -64,7 +64,7 @@ int main (int argc, char *argv[])
     {
       /* Print error message and exit.  */
       error(0, 0, "%s: %s", _("extra operand"), argv[optind]);
-      bzen_print_help();
+      bzenxmpp_print_help();
     }
 
 #if ENABLE_NLS

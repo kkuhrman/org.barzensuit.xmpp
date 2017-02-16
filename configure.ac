@@ -42,7 +42,7 @@ AC_PREREQ([2.69])
 AC_CONFIG_HEADERS([inc/config.h:config.in])
 
 # Safety check - make sure directory autoconf is told contains file in fact does.
-AC_CONFIG_SRCDIR([src/bzenxmpp.c])
+AC_CONFIG_SRCDIR([src/bzenxmpp_main.c])
 
 # Copyright will apply as long as these sources are in use, e.g., are
 # being compiled, which is reasonable year to claim the copyright.

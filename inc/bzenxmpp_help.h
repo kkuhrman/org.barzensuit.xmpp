@@ -1,5 +1,5 @@
 /**
- * @file:	bzenhelp.h
+ * @file:	bzenxmpp_help.h
  * @brief:	Implement --help and --version on command line.
  * 
  * @copyright:	Copyright (C) 2017 Kuhrman Technology Solutions LLC
@@ -23,16 +23,16 @@
 #define _BZENHELP_H_
 
 #include <config.h>
-#include "bzenxmpp.h"
+#include "bzenxmpp_main.h"
 
 /**
  * Display program help on stdout.
  */
-void bzen_print_help();
+void bzenxmpp_print_help();
 
 /**
  * Display program version info on stdout.
  */
-void bzen_print_version();
+void bzenxmpp_print_version();
 
 #endif /* _BZENHELP_H_ */

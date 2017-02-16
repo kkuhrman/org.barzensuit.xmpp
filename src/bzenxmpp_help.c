@@ -1,5 +1,5 @@
 /**
- * @file:	bzenhelp.c
+ * @file:	bzenxmpp_help.c
  * @brief:	Implement --help and --version on command line.
  * 
  * @copyright:	Copyright (C) 2017 Kuhrman Technology Solutions LLC
@@ -23,7 +23,7 @@
 #include "bzenxmpp_help.h"
 
 /* Display program help on stdout. */
-void bzen_print_help()
+void bzenxmpp_print_help()
 {
 
   /*  This long message is split into several pieces to help translators be able
@@ -71,7 +71,7 @@ Report bugs to: %s\n"), PACKAGE_BUGREPORT);
 }
 
 /* Display program version info on stdout. */
-void bzen_print_version()
+void bzenxmpp_print_version()
 {
   printf ("%s (%s) %s\n", PACKAGE, PACKAGE_NAME, VERSION);
   puts ("");

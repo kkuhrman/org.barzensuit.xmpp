@@ -34,8 +34,8 @@ AM_CPPFLAGS = \
 # make CLI utility
 bin_PROGRAMS = bzenxmpp
 bzenxmpp_SOURCES = \
-	bzenxmpp.c \
-	bzenxmpp.h \
+	bzenxmpp_main.c \
+	bzenxmpp_main.h \
 	bzenxmpp_help.c \
 	bzenxmpp_help.h
 
