@@ -1,5 +1,5 @@
 /**
- * @file:	bzenxmpp.c
+ * @file:	bzenxmpp_main.c
  * @brief:	bzenxmpp program main().
  * 
  * @copyright:	Copyright (C) 2017 Kuhrman Technology Solutions LLC

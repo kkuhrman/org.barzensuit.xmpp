@@ -1,7 +1,0 @@
-# List of source files which contain translatable strings.
-# Copyright (C) 2017 Kuhrman Technology Solutions LLC.
-
-# Common Library Files
-
-# Package Source Files
-src/bzenxmpp.c

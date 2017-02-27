@@ -36,8 +36,14 @@ bin_PROGRAMS = bzenxmpp
 bzenxmpp_SOURCES = \
 	bzenxmpp_main.c \
 	bzenxmpp_main.h \
+	bzenxmpp_client.c \
+	bzenxmpp_client.h \
 	bzenxmpp_help.c \
-	bzenxmpp_help.h
+	bzenxmpp_help.h \
+	bzenxmpp_server.c \
+	bzenxmpp_server.h \
+	bzenxmpp_stream.c \
+	bzenxmpp_stream.h
 
 # Link to gnulib & libbzenc
 bzenxmpp_LDADD = @BZENC_LIB@ @LTLIBINTL@ $(top_builddir)/glib/libgnu.a
