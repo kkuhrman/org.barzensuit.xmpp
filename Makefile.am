@@ -22,7 +22,7 @@
 #
 
 # Find libtool macros.
-ACLOCAL_AMFLAGS = -I glib/m4 -I m4
+ACLOCAL_AMFLAGS = -I lib/gnulib/m4
 
 # @todo: DISTCHECK_CONFIGURE_FLAGS
 
@@ -32,7 +32,4 @@ AM_CPPFLAGS = \
 
 
 # automake will search for MakefileS in the following subdirs.
-SUBDIRS = glib po src tests
-
-# Added by gettextize
-EXTRA_DIST = build-aux/config.rpath m4/ChangeLog
+SUBDIRS = lib/gnulib src tests

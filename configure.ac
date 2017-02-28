@@ -21,7 +21,7 @@
 # @author:	Karl Kuhrman
 #
 
-AC_INIT([bzenxmpp], [0.1.0], [bugs@barzensuit.org])
+AC_INIT([bzenxmpp], [0.1.1], [bugs@barzensuit.org])
 
 # Must come before AM_INIT_AUTOMAKE.
 AC_CONFIG_AUX_DIR([build-aux])
@@ -33,7 +33,7 @@ AC_CONFIG_AUX_DIR([build-aux])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 
 # Specify location of local autoconf macros
-AC_CONFIG_MACRO_DIR([glib/m4])
+AC_CONFIG_MACRO_DIR([lib/gnulib/m4])
 
 # Minimum Autoconf version required.
 AC_PREREQ([2.69])
@@ -105,12 +105,11 @@ AC_DEFINE_UNQUOTED([BZENC_LIB], ["$ac_bzenc_lib"], [location of libbzenc])
 AC_SUBST([BZENC_LIB], [$ac_bzenc_lib])
 
 # i18n support from GNU gettext.
-AM_GNU_GETTEXT_VERSION([0.19.8])
-AM_GNU_GETTEXT([external])
+# AM_GNU_GETTEXT_VERSION([0.19.8])
+# AM_GNU_GETTEXT([external])
 
 AC_CONFIG_FILES([
- glib/Makefile
- po/Makefile.in
+ lib/gnulib/Makefile
  Makefile
  src/Makefile
  src/bzenxmpp.pc
